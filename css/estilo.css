@@ -1,0 +1,255 @@
+body {
+margin:0;
+font-family: "Linux Libertine", Georgia, serif;
+background-color:#0a0a0a;
+color:#ddd;
+}
+
+/* FUNDOS */
+
+body.sangue{
+background:url('../imagens/diabo-fundo.png') center/cover fixed no-repeat;
+}
+
+body.morte{
+background:url('../imagens/deus-da-morte.png') center/cover fixed no-repeat;
+}
+
+body.energia{
+background:url('../imagens/anfitrião.png') center/cover fixed no-repeat;
+}
+
+body.conhecimento{
+background:url('../imagens/magistrada.png') center/cover fixed no-repeat;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+position:fixed;
+left:0;
+top:0;
+width:230px;
+height:100%;
+background:#0b0b0b;
+border-right:2px solid #400;
+padding-top:20px;
+}
+
+.sidebar h2{
+color:#ff4444;
+text-align:center;
+margin-bottom:20px;
+}
+
+.sidebar a{
+display:block;
+padding:12px 18px;
+color:#ddd;
+text-decoration:none;
+}
+
+.sidebar a:hover{
+background:#500;
+}
+
+/* CONTEÚDO */
+
+.page{
+margin-left:240px;
+}
+
+.header{
+background:#8B0000;
+padding:15px;
+text-align:center;
+color:white;
+font-size:1.8rem;
+font-weight:bold;
+border-bottom:4px solid #400;
+}
+
+.mw-body{
+max-width:900px;
+margin:30px auto;
+padding:30px;
+background:rgba(10,0,0,0.85);
+border-radius:8px;
+}
+
+/* TITULOS */
+
+body.sangue h1{
+color:#ff4444;
+text-shadow:0 0 15px #800;
+}
+
+body.energia h1{
+color:#b26cff;
+text-shadow:0 0 15px #7a2fff;
+}
+
+body.morte h1{
+color:#999;
+text-shadow:0 0 15px black;
+}
+
+body.conhecimento h1{
+color:#ffd84a;
+text-shadow:0 0 15px #b59b00;
+}
+
+h1{
+text-align:center;
+font-size:3rem;
+}
+
+/* INFOBOX */
+
+.infobox{
+float:right;
+width:300px;
+background:#140000;
+border:2px solid #800;
+padding:10px;
+margin:0 0 20px 20px;
+}
+
+.quote{
+border-left:6px solid #c00;
+background:#1a0000;
+padding:15px;
+margin:25px 0;
+font-style:italic;
+}
+
+.center-symbol{
+text-align:center;
+margin:25px 0;
+}
+
+/* ================================================= */
+/* ADIÇÕES PARA O SISTEMA DE RITUAIS */
+/* (NÃO ALTERA NADA DO CSS ORIGINAL) */
+/* ================================================= */
+
+/* GALERIA DE RITUAIS */
+
+.ritual-galeria{
+display:flex;
+flex-direction:column;
+gap:20px;
+margin-top:30px;
+}
+
+.ritual-card{
+display:flex;
+align-items:center;
+background:#140000;
+border:2px solid #700;
+padding:15px;
+border-radius:6px;
+transition:0.2s;
+}
+
+.ritual-card:hover{
+background:#1a0000;
+transform:scale(1.02);
+box-shadow:0 0 10px #700;
+}
+
+.ritual-card img{
+width:90px;
+margin-right:20px;
+border-radius:4px;
+}
+
+.ritual-info a{
+font-size:1.4rem;
+font-weight:bold;
+color:#ff4444;
+text-decoration:none;
+}
+
+.ritual-info a:hover{
+text-decoration:underline;
+}
+
+.ritual-info p{
+margin:4px 0;
+color:#aaa;
+}
+
+/* AVISO DE RITUAIS */
+
+.aviso{
+background:#2b0000;
+border:2px solid red;
+padding:20px;
+margin-bottom:40px;
+text-align:center;
+font-size:1.2rem;
+box-shadow:0 0 10px red;
+}
+
+/* CIRCULOS */
+
+.circulo-box{
+margin-top:40px;
+padding:20px;
+border:2px solid #600;
+background:#100000;
+border-radius:6px;
+}
+
+.circulo-box h2{
+margin-top:0;
+color:#ff4444;
+}
+
+.circulo-box button{
+background:#8b0000;
+border:none;
+padding:10px 20px;
+color:white;
+cursor:pointer;
+margin-top:10px;
+font-size:1rem;
+border-radius:4px;
+}
+
+.circulo-box button:hover{
+background:red;
+}
+
+/* PAGINA INDIVIDUAL DO RITUAL */
+
+.ritual-layout{
+display:flex;
+gap:30px;
+margin-top:20px;
+align-items:flex-start;
+}
+
+.ritual-layout img{
+width:250px;
+border:2px solid #800;
+border-radius:6px;
+}
+
+.ritual-texto{
+flex:1;
+}
+
+/* RITUAIS EM BETA */
+
+.beta{
+margin-top:60px;
+padding:25px;
+border:2px solid #700;
+background:#120000;
+text-align:center;
+color:#ff4444;
+font-size:1.2rem;
+box-shadow:0 0 12px #500;
+}
